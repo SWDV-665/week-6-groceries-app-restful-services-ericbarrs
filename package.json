@@ -6,12 +6,13 @@
   "scripts": {
     "ng": "ng",
     "dev": "concurrently \" ionic serve --lab \" \"cd server && npm start\" ",
-    "start":"node ./server/server.js",
+    "start":"cd server && node ./server/server.js",
     "app": "ng serve ",
     "app-build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "npm install --prefix server"
   },
   "heroku-run-build-script": true,
   "private": true,
