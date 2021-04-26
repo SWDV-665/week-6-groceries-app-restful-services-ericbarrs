@@ -1,0 +1,1 @@
+web: cd node ./server/server.js
