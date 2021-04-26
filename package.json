@@ -6,7 +6,9 @@
   "scripts": {
     "ng": "ng",
     "dev": "concurrently \" ionic serve --lab \" \"cd server && npm start\" ",
-    "server":"cd server & node server.js",
+    "start":"cd server & node server.js",
+    "app": "ng serve ",
+    "app-build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
