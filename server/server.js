@@ -7,7 +7,7 @@ const app = express()
 
 app.use(express.json())
 
-const DB = process.env.MONGO || 'mongodb+srv://ericb:abcd1234@cluster0.fvto2.mongodb.net/Groceries'
+const DB = process.env.MONGO || ''
 
 mongoose
 .connect(DB, { useNewUrlParser: true }, { useUnifiedTopology: true })
